@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0.367);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.nav-div{
+    display: flex;
+    align-items: center;
+}
+.nav-div-logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 10rem;
+    margin-left: 6rem;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.nav-div-site{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-right: 2.5rem;
+}
+.nav-div-reg{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 8rem;
+    
+}
+.first-section{
+    background-image: url("dien-ch3-assets/main-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-section-h1{
+    font-size: 4.3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+.first-section-h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: white;
+    text-transform: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1.5rem;
+}
+.first-section-button{
+    margin-top: 2rem;
+    background: linear-gradient(194.68deg, #f59402 11.27%, #fbab16 90.4%);
+    border-radius: 4px;
+    color: black;
+    font-size: 1.1rem;
+    padding:1rem;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.scroll-down{
+    position:absolute;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+    transform-origin: bottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.scroll-down-text{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.6rem;
+}
+.scroll-down-icon{
+    width: 40%;
+}
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(1rem); }
+    100% { transform: translateY(0); }
+}
+.second-section{
+    background-image:  url("dien-ch3-assets/the-games-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+.second-section-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem;
+    margin-left: 6rem;
+}
+.second-section-content-h1{
+    font-size: 1.1rem;
+    font-weight: none;
+    color: white;
+    text-transform: none;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.05rem;
+    display: flex;
+}
+.second-section-content-h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.05rem;
+}
+.slideshow-container {
+    position: relative;
+    flex-direction: column;
+    margin-top: 12rem;
+    margin-right: 8.5rem;
+}
+.img-caraousel{
+    width: 858px;
+    height: 477px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    color: white;
+    transition: 0.6s ease;
+    user-select: none;
+    margin-top: 13rem;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.slideshow-container-dot {
+    margin-left: 27rem;
+    margin-top: 1rem;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+@keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+}
+.third-section{
+    background-image:  url("dien-ch3-assets/features.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: none;
+    padding: 0;
+}
+.third-section-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 9rem;
+    margin-right: 15rem;
+    margin-bottom: 5rem;
+}
+.second-section-content-li{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: orange;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.05rem;
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-top: 3rem;
+}
+.second-section-content-li-1{
+    margin-bottom: 0.7rem;
+}
+.second-section-content-li-2{
+    margin-bottom: 3rem;
+}
+.second-section-content-li-p{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    text-transform: none;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+.fourth-section{
+    background-image:  url("dien-ch3-assets/requirements.png");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: none;
+    padding: 0;
+}
+.fourth-section-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-left: 6rem;
+}
